@@ -16,5 +16,11 @@
         }
       }
     }
+  },
+
+  "selenium" : {
+    "cli_args" : {
+      "webdriver.chrome.driver" : "~/qrt-nightwatch/node_modules/chromedriver/bin/"
+    }
   }
 }
