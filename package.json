@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "nightwatch test",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "keywords": [],
+  "author": "aupeniek",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "qrt-nightwatch"
+  },
+  "dependencies": {
+    "nightwatch": "^1.1.10",
+    "selenium-server": "^3.141.59"
+  },
+  "devDependencies": {
+    "chromedriver": "^74.0.0",
+    "geckodriver": "^1.16.2"
+  }
+}
