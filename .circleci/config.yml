@@ -3,7 +3,7 @@ jobs: # a collection of steps
   build: # runs not using Workflows must have a `build` job as entry point
     working_directory: ~/qrt-nightwatch/ # directory where steps will run
     docker: # run the steps with Docker
-      - image: circleci/node:4.8.2 # ...with this image as the primary container; this is where all
+      - image: circleci/node:latest # ...with this image as the primary container;
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
       - run:
@@ -14,13 +14,13 @@ jobs: # a collection of steps
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: install-npm-nightwatch
-          command: npm install nightwatch
+          command: npm install nightwatch --save-dev
       - run:
           name: install-npm-selenium-server
           command: npm install selenium-server
       - run:
           name: install-npm-chromedriver
-          command: npm install chromedriver
+          command: npm install chromedriver --save-dev
       - save_cache: # special step to save the dependency cache
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
