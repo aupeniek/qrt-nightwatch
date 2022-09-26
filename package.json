@@ -14,7 +14,7 @@
     "url": "qrt-nightwatch"
   },
   "dependencies": {
-    "nightwatch": "^1.1.10",
+    "nightwatch": "^1.7.13",
     "selenium-server": "^3.141.59"
   },
   "devDependencies": {
